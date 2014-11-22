@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>NetPonto - Octopus Demo v@(MvcApplication.Version.ToString(3))</title>
+    <link href="@Url.Content("~/css/bootstrap.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/css/octopusdemo.css")" rel="stylesheet">
+    <link href="@Url.Content("~/font-awesome-4.1.0/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" class="index">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="#page-top">Octopus Hackathon!!! v@(MvcApplication.Version.ToString(3)) (@System.Configuration.ConfigurationManager.AppSettings["EnvironmentName"])</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Octopus Demo v@(MvcApplication.Version.ToString(3))</span>
+                        <hr class="star-light">
+                        <span class="skills">netponto-octopusserver.cloudapp.net</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; NetPonto @DateTime.UtcNow.Year - Page rendered on @DateTime.UtcNow
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="@Url.Content("~/js/jquery-1.11.0.js")"></script>
+    <script src="@Url.Content("~/js/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/js/jquery.easing.min.js")"></script>
+    <script src="@Url.Content("~/js/classie.js")"></script>
+    <script src="@Url.Content("~/js/cbpAnimatedHeader.js")"></script>
+    <script src="@Url.Content("~/js/octopusdemo.js")"></script>
+</body>
+</html>
